@@ -14,15 +14,15 @@ This repository contains packages for the following Linux distributions:
 
 In order to add this repository to your **Ubuntu** system, do the following, **as root**:
 
-    wget -O - https://luarvique.github.io/ppa/openwebrx-plus.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/openwebrx-plus.gpg
-    echo "deb [signed-by=/etc/apt/trusted.gpg.d/openwebrx-plus.gpg] https://luarvique.github.io/ppa/ubuntu ./" > /etc/apt/sources.list.d/openwebrx-plus.list
+    wget -O - https://jubamo.github.io/repo/KEY.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/KEY.gpg
+    echo "deb [signed-by=/etc/apt/trusted.gpg.d/KEY.gpg] https://jubamo.github.io/repo/ubuntu ./" > /etc/apt/sources.list.d/openwebrx-plus.list
     apt update
 
 In order to add this repository to your **Debian** system, do the following, **as root**:
 
-    wget -O - https://luarvique.github.io/ppa/openwebrx-plus.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/openwebrx-plus.gpg
-    echo "deb [signed-by=/etc/apt/trusted.gpg.d/openwebrx-plus.gpg] https://luarvique.github.io/ppa/debian ./" > /etc/apt/sources.list.d/openwebrx-plus.list
-    apt update
+    wget -O - https://jubamo.github.io/repo/KEY.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/KEY.gpg
+    echo "deb [signed-by=/etc/apt/trusted.gpg.d/KEY.gpg] https://jubamo.github.io/repo/debian ./" > /etc/apt/sources.list.d/openwebrx-plus.list
+    apt updat
 
 You should also have the original OpenWebRX repository added, since it contains some necessary packages. In order to add the original OpenWebRX repository to your system, do the following, **as root**:
 
