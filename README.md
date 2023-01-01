@@ -22,7 +22,7 @@ In order to add this repository to your **Debian** system, do the following, **a
 
     wget -O - https://jubamo.github.io/repo/KEY.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/KEY.gpg
     echo "deb [signed-by=/etc/apt/trusted.gpg.d/KEY.gpg] https://jubamo.github.io/repo/debian ./" > /etc/apt/sources.list.d/openwebrx-plus.list
-    apt updat
+    apt update
 
 You should also have the original OpenWebRX repository added, since it contains some necessary packages. In order to add the original OpenWebRX repository to your system, do the following, **as root**:
 
