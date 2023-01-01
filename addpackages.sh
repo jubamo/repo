@@ -1,6 +1,6 @@
 #!/bin/sh
 
-EMAIL=luarvique@gmail.com
+EMAIL=jbmonte@gmail.com
 
 # Packages & Packages.gz
 dpkg-scanpackages --multiversion . > Packages
