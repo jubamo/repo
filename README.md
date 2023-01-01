@@ -40,6 +40,7 @@ To make sure OpenWebRX is running, direct your local web browser to the followin
     
 You should see the OpenWebRX web interface, with the noise filter (NR) and tuning step (>-<) controls.
 
- https://assafmo.github.io      https://jubamo.github.io 
+ https://assafmo.github.io      
+ https://jubamo.github.io/repo 
  
 
