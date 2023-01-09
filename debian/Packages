@@ -1,3 +1,20 @@
+Package: codecserver-driver-softmbe
+Version: 0.0.1
+Architecture: amd64
+Maintainer: The Knatterfunkers <knatterfunker@protonmail.com>
+Installed-Size: 55
+Depends: libcodecserver (>= 0.1.0), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libmbe1, libstdc++6 (>= 5.2)
+Filename: ./amd64/codecserver-driver-softmbe_0.0.1_amd64.deb
+Size: 15808
+MD5sum: ea9ba42f23101abc68e1cdb4da33833a
+SHA1: d661d448dc9def905dbcd4f4c6be236bb6043057
+SHA256: ae2641d25053474e679ffdd589d558ba0055441cbe1de1388d3fee743f4f47a8
+Section: hamradio
+Priority: optional
+Description: Codecserver driver for libmbe (software decoder)
+ Adds support to acodecserver for software decoding of DMR, YSF, NXDN and
+ D-STAR digital voice.
+
 Package: csdr
 Version: 0.18.2
 Architecture: armhf
@@ -150,6 +167,52 @@ Section: hamradio
 Priority: optional
 Description: simple library for software defined radio
  A simple DSP library for Software Defined Radio.
+
+Package: libmbe-dev
+Source: libmbe
+Version: 1.3.0
+Architecture: amd64
+Maintainer: Jared Szechy <jared.szechy@gmail.com>
+Installed-Size: 156
+Depends: libmbe1 (= 1.3.0)
+Filename: ./amd64/libmbe-dev_1.3.0_amd64.deb
+Size: 33756
+MD5sum: fd8ee9da50a03c256f103204607b2329
+SHA1: 4814a16c46a168fe5df248b8085cdd4978f7ce4a
+SHA256: a5c66095e8adb0bc5454b1cb967626937c29e37e86cf3e7a7c5c188e7b4b05a9
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/szechyjs/mbelib
+Description: P25 Phase 1 and ProVoice vocoder - development kit
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ This package contains the development files for libmbe.
+
+Package: libmbe1
+Source: libmbe
+Version: 1.3.0
+Architecture: amd64
+Maintainer: Jared Szechy <jared.szechy@gmail.com>
+Installed-Size: 132
+Depends: libc6 (>= 2.29)
+Filename: ./amd64/libmbe1_1.3.0_amd64.deb
+Size: 32632
+MD5sum: 8a75201cb76873c6a028e9b850f13e44
+SHA1: 357b6cebb42f3c2212489c9d6e5cf4f034415fbc
+SHA256: 1d4b7f1c5d1f47a64287531378c860f9ef9b7e165f1d8c91952f676691f9ded0
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/szechyjs/mbelib
+Description: P25 Phase 1 and ProVoice vocoder - runtime library
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ This package contains the libmbe library used by applications.
 
 Package: libowrx-connector
 Source: owrx-connector
@@ -350,14 +413,14 @@ Package: openwebrx
 Version: 1.2.2
 Architecture: all
 Maintainer: Marat Fayzullin <luarvique@gmail.com>
-Installed-Size: 1802
+Installed-Size: 1806
 Depends: adduser, python3 (>= 3.5), python3-pkg-resources, owrx-connector (>= 0.6), soapysdr-tools, python3-csdr (>= 0.18), python3:any, debconf (>= 0.5) | debconf-2.0
 Recommends: python3-digiham (>= 0.6), direwolf (>= 1.4), wsjtx, js8call, runds-connector (>= 0.2), hpsdrconnector, aprs-symbols, m17-demod, python3-js8py (>= 0.1), nmux (>= 0.18), codecserver (>= 0.1)
 Filename: ./amd64/openwebrx_1.2.2_all.deb
-Size: 614448
-MD5sum: de437e890096fbdbf53823aeba2f0c3b
-SHA1: 38324e0ebe340d0fe828f9e1e4569d432fee5ba3
-SHA256: 1982831da9bce9fa2162baf3eca937042ae9843999a37aed9c18d7678d373b62
+Size: 615112
+MD5sum: a6c952e2a99848a4e9f2ac9f2c6df4be
+SHA1: c8b66190e04b8e3674329eac63ad3da7904b15af
+SHA256: 344b3ad5f76eceb2fa79a677dcba5aeeab648ba37cb3a117650cedb5ccaba42e
 Section: hamradio
 Priority: optional
 Homepage: https://www.openwebrx.de/
