@@ -1,5 +1,22 @@
 Package: codecserver-driver-softmbe
 Version: 0.0.1
+Architecture: arm64
+Maintainer: The Knatterfunkers <knatterfunker@protonmail.com>
+Installed-Size: 55
+Depends: libcodecserver (>= 0.1.0), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libmbe1, libstdc++6 (>= 5.2)
+Filename: ./arm64/codecserver-driver-softmbe_0.0.1_arm64.deb
+Size: 14712
+MD5sum: f6ad8916bf84a1894e03e4c416025a8d
+SHA1: 1bc977c3acaeaa984d6d938e87626deb8c6be788
+SHA256: 8d3362bbe5bf39210770b3901d123295de846fe322142a435005dd69ec2c54ef
+Section: hamradio
+Priority: optional
+Description: Codecserver driver for libmbe (software decoder)
+ Adds support to acodecserver for software decoding of DMR, YSF, NXDN and
+ D-STAR digital voice.
+
+Package: codecserver-driver-softmbe
+Version: 0.0.1
 Architecture: amd64
 Maintainer: The Knatterfunkers <knatterfunker@protonmail.com>
 Installed-Size: 55
@@ -40,10 +57,10 @@ Installed-Size: 630
 Depends: libcsdr0 (= 0.18.2), libc6 (>= 2.29), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)
 Recommends: nmux (= 0.18.2)
 Filename: ./arm64/csdr_0.18.2_arm64.deb
-Size: 171064
-MD5sum: b2ce1e141e91f8a678ff6379273074a1
-SHA1: 06c47e48921ae59bc623b4e2fcc8e44fd2a166b3
-SHA256: 90c190ab97b172de7db3554591fd2fd6ea83f9535e6bcc46214a9e18e5ddabbf
+Size: 170932
+MD5sum: 634d00ff77b0f45ef4551ec035da354e
+SHA1: 9d4fd3aba900bf724dfa2069919d7f757fc9dbf4
+SHA256: 040fbb066b768fca170c55ba1f9053bffe717e207261438b944f98a9bba3346f
 Section: hamradio
 Priority: optional
 Description: command-line sdr
@@ -142,10 +159,10 @@ Maintainer: Marat Fayzullin <luarvique@gmail.com>
 Installed-Size: 487
 Depends: libc6 (>= 2.29), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.0), libsamplerate0 (>= 0.1.8), libstdc++6 (>= 6)
 Filename: ./arm64/libcsdr0_0.18.2_arm64.deb
-Size: 106876
-MD5sum: 3083a6f52ad41a927be8bbd8ad783c98
-SHA1: ad6fece7ffd117723493a5bd7f0f257130451ce9
-SHA256: 5eb158864cf9f17fa7f59b915e79d43262f91d5b177b4c41f23db83e07b3459a
+Size: 106908
+MD5sum: f63f770bdf350b36b0010ad3a88fdd5c
+SHA1: d69dc1cf6002ded0d23a3af8d7a2273957e15c38
+SHA256: 12b96007ba7794e44e34f6557f4a541366d9ee48d889678a8a2c64f19675a2ca
 Section: hamradio
 Priority: optional
 Description: simple library for software defined radio
@@ -171,6 +188,29 @@ Description: simple library for software defined radio
 Package: libmbe-dev
 Source: libmbe
 Version: 1.3.0
+Architecture: arm64
+Maintainer: Jared Szechy <jared.szechy@gmail.com>
+Installed-Size: 151
+Depends: libmbe1 (= 1.3.0)
+Filename: ./arm64/libmbe-dev_1.3.0_arm64.deb
+Size: 33320
+MD5sum: 1fa4e28881bc85641215f25b9dee839d
+SHA1: e73dfda13cadf884c331ee2067a76e83f495a3aa
+SHA256: 84c4580bf2aa31db7fd629380cda456f97e631fc75b9b550f43da8ffc8ca048e
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/szechyjs/mbelib
+Description: P25 Phase 1 and ProVoice vocoder - development kit
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ This package contains the development files for libmbe.
+
+Package: libmbe-dev
+Source: libmbe
+Version: 1.3.0
 Architecture: amd64
 Maintainer: Jared Szechy <jared.szechy@gmail.com>
 Installed-Size: 156
@@ -190,6 +230,29 @@ Description: P25 Phase 1 and ProVoice vocoder - development kit
  3600x2250 bit/s vocoder used in various radio systems.
  .
  This package contains the development files for libmbe.
+
+Package: libmbe1
+Source: libmbe
+Version: 1.3.0
+Architecture: arm64
+Maintainer: Jared Szechy <jared.szechy@gmail.com>
+Installed-Size: 132
+Depends: libc6 (>= 2.29)
+Filename: ./arm64/libmbe1_1.3.0_arm64.deb
+Size: 31800
+MD5sum: ddd2e1688a4c2c8aaf303993f9d8ca12
+SHA1: 753807c48c458be8c42d131218252d8cfc3cd79a
+SHA256: 36b65d9fd27fdf71dcc7164d76785e5fc5bb818ec06ccfd76de845503bbb4c26
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/szechyjs/mbelib
+Description: P25 Phase 1 and ProVoice vocoder - runtime library
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ This package contains the libmbe library used by applications.
 
 Package: libmbe1
 Source: libmbe
@@ -239,10 +302,10 @@ Maintainer: Marat Fayzullin <luarvique@gmail.com>
 Installed-Size: 94
 Depends: libcsdr0 (>= 0.18), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 6)
 Filename: ./arm64/libowrx-connector_0.6.2_arm64.deb
-Size: 25724
-MD5sum: a3b840a0ef710c986fd6f1c0e5dbf37d
-SHA1: c063907e5e9eed822ad33f80902bc052abcad4d6
-SHA256: d0414d98c95e93f924e542869009c731b713892ae12fe94ab4008dec7a2a3163
+Size: 25692
+MD5sum: 126b44bc01bf118b3ac788d3b2cf90d0
+SHA1: 6301c8518dc6436436514e4f8285fb63cb36ff31
+SHA256: b53d1beee2dd687a79a37fc7c14c1d4dc59470a0f4a788862af5470b3c518131
 Section: hamradio
 Priority: optional
 Description: OpenWebRX connector base library
@@ -344,10 +407,10 @@ Installed-Size: 35
 Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 4.1.1)
 Conflicts: csdr (<= 0.18.0~133)
 Filename: ./arm64/nmux_0.18.2_arm64.deb
-Size: 10400
-MD5sum: 0dda3b79aef91729bc1fc2ebd1858020
-SHA1: a397898457af8ea9acbb85bd1afc5e86335a47c6
-SHA256: fd699ad5282dc64d98d1eace43f688bf662a4e70bd7ec677cc8a0604340615ef
+Size: 10396
+MD5sum: 060b780bd6c31b6dd8c5d973098a5a6c
+SHA1: d3315e0c1bae7ebe52ba48d75bcd7f38eb5f6bc9
+SHA256: c9133871d37654f1c0794dcce224011f0fae37e583837de1ffab1127bc982790
 Section: hamradio
 Priority: optional
 Description: TCP stream multiplexer
@@ -574,10 +637,10 @@ Installed-Size: 38
 Depends: libowrx-connector (= 0.6.2), libc6 (>= 2.17), libgcc-s1 (>= 3.0), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 5.2)
 Conflicts: owrx-connector (<< 0.4)
 Filename: ./arm64/rtl-connector_0.6.2_arm64.deb
-Size: 10080
-MD5sum: 6cbb43d2a9352c7894d2b16367157a05
-SHA1: 37c648b9fd0067f5e81d2a3b0fecbf28ad7dfefd
-SHA256: 949cb90799c77d46f6d6acab85f276d7aaaf74b006415df303d6ee8f1dbefc96
+Size: 10084
+MD5sum: d6fb9b73fb30505dcab145724cbb9c6f
+SHA1: c02eb6d92ede7ba9716a97872f277f4c4bbcc7ad
+SHA256: 6eb64276463d9469019912ecbcf24bfb9e9c86dd9918fc5bd06d56f5e698e6cd
 Section: hamradio
 Priority: optional
 Description: OpenWebRX connector for RTL-SDR devices
@@ -629,10 +692,10 @@ Installed-Size: 38
 Depends: libowrx-connector (= 0.6.2), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
 Conflicts: owrx-connector (<< 0.4)
 Filename: ./arm64/rtl-tcp-connector_0.6.2_arm64.deb
-Size: 10188
-MD5sum: 78802f8693665e9315d6fa1d12235d80
-SHA1: 0cd7685f1c03ba954983816a1cd93471de8e54fb
-SHA256: a419096743a9dddf80af399d6bc1240e506b9936475121d914e7366e0a673f12
+Size: 10176
+MD5sum: b4dc7761f6b690d082b0f27e5c30dd94
+SHA1: c613a20db2ecc81d7f494e9b22c0c9350d4484bb
+SHA256: f4e4bc9a35fa868880d3da9c5302dca12168a0715ca0997a972e03eebf8898e8
 Section: hamradio
 Priority: optional
 Description: OpenWebRX connector for rtl_tcp remote devices
@@ -685,10 +748,10 @@ Installed-Size: 42
 Depends: libowrx-connector (= 0.6.2), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libsoapysdr0.7 (>= 0.7.2), libstdc++6 (>= 5.2)
 Conflicts: owrx-connector (<< 0.4)
 Filename: ./arm64/soapy-connector_0.6.2_arm64.deb
-Size: 12128
-MD5sum: ef2d53d65bf77aeda41dff26dfcf6cf5
-SHA1: fb5742123b2966700b859bf8a42be08f5d0c85e4
-SHA256: 161ced8e6eb46288d44f85fe2703571179b8fbc61ba0759d4508f6c21a27659c
+Size: 12120
+MD5sum: c47faf68a78d0fd47c126bf6c01a3192
+SHA1: d27881c4245d8ad6ac1708febcb85d16a32bc85a
+SHA256: 9e6f2ca9e64f4d41281505193b4c42414ff90ffafec16a8b47720b7eaf04d1d3
 Section: hamradio
 Priority: optional
 Description: OpenWebRX connector for SoapySDR devices
