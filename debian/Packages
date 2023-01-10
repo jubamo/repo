@@ -5,10 +5,10 @@ Maintainer: The Knatterfunkers <knatterfunker@protonmail.com>
 Installed-Size: 55
 Depends: libcodecserver (>= 0.1.0), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libmbe1, libstdc++6 (>= 5.2)
 Filename: ./arm64/codecserver-driver-softmbe_0.0.1_arm64.deb
-Size: 14712
-MD5sum: f6ad8916bf84a1894e03e4c416025a8d
-SHA1: 1bc977c3acaeaa984d6d938e87626deb8c6be788
-SHA256: 8d3362bbe5bf39210770b3901d123295de846fe322142a435005dd69ec2c54ef
+Size: 14696
+MD5sum: c959d1bf5e69b97874feaebeb0b6898d
+SHA1: 7a19c1358fb5ed3fff61011fe2326a8bc0bd74d2
+SHA256: 2cca8646ab3c7604a81ab89f6bc2dd09c4a2f69e815cb48cc7081a6377b1ac57
 Section: hamradio
 Priority: optional
 Description: Codecserver driver for libmbe (software decoder)
