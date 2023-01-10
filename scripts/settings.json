@@ -1,0 +1,190 @@
+{
+    "version": 7,
+    "sdrs": {
+        "rtlsdr": {
+            "name": "RTL-SDR USB Stick",
+            "type": "rtl_sdr",
+            "profiles": {
+                "de4b27b5-03d8-469f-a571-2fe418c2aaa3": {
+                    "name": "DMR",
+                    "center_freq": 162000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 162296000,
+                    "start_mod": "dmr",
+                    "tuning_step": 1
+                },
+                "2m": {
+                    "name": "2m",
+                    "center_freq": 145000000,
+                    "rf_gain": 29,
+                    "samp_rate": 2048000,
+                    "start_freq": 145725000,
+                    "start_mod": "nfm"
+                },
+                "70cm": {
+                    "name": "70cm Repeaters",
+                    "center_freq": 438800000,
+                    "rf_gain": 29,
+                    "samp_rate": 2400000,
+                    "start_freq": 439275000,
+                    "start_mod": "nfm"
+                }
+            }
+        },
+        "airspy": {
+            "name": "Airspy HF+",
+            "type": "airspyhf",
+            "rf_gain": "auto",
+            "profiles": {
+                "20m": {
+                    "name": "20m",
+                    "center_freq": 14150000,
+                    "samp_rate": 384000,
+                    "start_freq": 14070000,
+                    "start_mod": "usb"
+                },
+                "30m": {
+                    "name": "30m",
+                    "center_freq": 10125000,
+                    "samp_rate": 192000,
+                    "start_freq": 10142000,
+                    "start_mod": "usb"
+                },
+                "40m": {
+                    "name": "40m",
+                    "center_freq": 7100000,
+                    "samp_rate": 256000,
+                    "start_freq": 7070000,
+                    "start_mod": "lsb"
+                },
+                "80m": {
+                    "name": "80m",
+                    "center_freq": 3650000,
+                    "samp_rate": 384000,
+                    "start_freq": 3570000,
+                    "start_mod": "lsb"
+                },
+                "49m": {
+                    "name": "49m Broadcast",
+                    "center_freq": 6050000,
+                    "samp_rate": 384000,
+                    "start_freq": 6070000,
+                    "start_mod": "am"
+                }
+            },
+            "enabled": false
+        },
+        "sdrplay": {
+            "name": "SDRPlay RSP2",
+            "type": "sdrplay",
+            "antenna": "Antenna A",
+            "profiles": {
+                "20m": {
+                    "name": "20m",
+                    "center_freq": 14150000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 14070000,
+                    "start_mod": "usb"
+                },
+                "30m": {
+                    "name": "30m",
+                    "center_freq": 10125000,
+                    "rf_gain": 0,
+                    "samp_rate": 250000,
+                    "start_freq": 10142000,
+                    "start_mod": "usb"
+                },
+                "40m": {
+                    "name": "40m",
+                    "center_freq": 7100000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 7070000,
+                    "start_mod": "lsb"
+                },
+                "80m": {
+                    "name": "80m",
+                    "center_freq": 3650000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 3570000,
+                    "start_mod": "lsb"
+                },
+                "49m": {
+                    "name": "49m Broadcast",
+                    "center_freq": 6000000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 6070000,
+                    "start_mod": "am"
+                }
+            },
+            "enabled": false
+        }
+    },
+    "receiver_name": "Test dmr",
+    "receiver_location": "CS",
+    "receiver_asl": 200,
+    "receiver_admin": "example@example.com",
+    "receiver_gps": {
+        "lat": 47.0,
+        "lon": 19.0
+    },
+    "photo_title": "Panorama of Budapest from Sch\u00f6nherz Zolt\u00e1n Dormitory",
+    "photo_desc": "",
+    "max_clients": 20,
+    "receiver_keys": [
+        ""
+    ],
+    "waterfall_scheme": "GoogleTurboWaterfall",
+    "fft_fps": 8,
+    "fft_size": 1024,
+    "fft_voverlap_factor": 0.3,
+    "waterfall_levels": {
+        "min": -88.0,
+        "max": -20.0
+    },
+    "waterfall_auto_levels": {
+        "min": 3.0,
+        "max": 10.0
+    },
+    "waterfall_auto_min_range": 50,
+    "audio_compression": "none",
+    "fft_compression": "adpcm",
+    "tuning_precision": 2,
+    "google_maps_api_key": "",
+    "map_position_retention_time": 7200,
+    "squelch_auto_margin": 10,
+    "wfm_deemphasis_tau": 5e-05,
+    "digital_voice_unvoiced_quality": 4,
+    "digital_voice_dmr_id_lookup": true,
+    "digimodes_fft_size": 2048,
+    "decoding_queue_workers": 4,
+    "decoding_queue_length": 10,
+    "wsjt_decoding_depth": 3,
+    "wsjt_decoding_depths": {
+        "jt65": 1
+    },
+    "js8_decoding_depth": 3,
+    "js8_enabled_profiles": [
+        "normal",
+        "slow"
+    ],
+    "fst4_enabled_intervals": [
+        15,
+        30
+    ],
+    "fst4w_enabled_intervals": [
+        120,
+        300
+    ],
+    "q65_enabled_combinations": [
+        "A30",
+        "C60",
+        "E120"
+    ],
+    "callsign_url": "https://www.qrzcq.com/call/{}",
+    "usage_policy_url": "policy",
+    "session_timeout": 0
+}

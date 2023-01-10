@@ -1,0 +1,24 @@
+[
+    {
+        "user": "juan",
+        "enabled": true,
+        "must_change_password": false,
+        "password": {
+            "encoding": "hash",
+            "value": "7bc9c8ae64e61bad00578690c739cee13264293882fb7eab0b758213fcd11fa4",
+            "algorithm": "sha256",
+            "salt": "18ed927ac16197db50337617e36ad232abfc70f6d91af787ead6171f304bc3fd"
+        }
+    },
+    {
+        "user": "admin",
+        "enabled": true,
+        "must_change_password": false,
+        "password": {
+            "encoding": "hash",
+            "value": "669fd57656bb60c9c80b04c0d1f5c5fb7eceaf7d3b43f7db8449a5767dc7d731",
+            "algorithm": "sha256",
+            "salt": "2b541541a4d6829fcd4af3630a6c010e2861f3e8cf05cba83941e595c147f57e"
+        }
+    }
+]
