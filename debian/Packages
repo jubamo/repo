@@ -491,17 +491,17 @@ Description: multi-user web sdr
  Open source, multi-user SDR receiver with a web interface
 
 Package: openwebrx
-Version: 1.2.2
+Version: 1.2.3
 Architecture: all
 Maintainer: Marat Fayzullin <luarvique@gmail.com>
-Installed-Size: 1806
+Installed-Size: 1807
 Depends: adduser, python3 (>= 3.5), python3-pkg-resources, owrx-connector (>= 0.6), soapysdr-tools, python3-csdr (>= 0.18), python3:any, debconf (>= 0.5) | debconf-2.0
 Recommends: python3-digiham (>= 0.6), direwolf (>= 1.4), wsjtx, js8call, runds-connector (>= 0.2), hpsdrconnector, aprs-symbols, m17-demod, python3-js8py (>= 0.1), nmux (>= 0.18), codecserver (>= 0.1)
-Filename: ./amd64/openwebrx_1.2.3_all.deb
-Size: 615112
-MD5sum: a6c952e2a99848a4e9f2ac9f2c6df4be
-SHA1: c8b66190e04b8e3674329eac63ad3da7904b15af
-SHA256: 344b3ad5f76eceb2fa79a677dcba5aeeab648ba37cb3a117650cedb5ccaba42e
+Filename: ./arm64/openwebrx_1.2.3_all.deb
+Size: 615344
+MD5sum: 9a50559a49b35d6ebb008c8492b40f95
+SHA1: 591d9760dd151ad3f732afb0e60c788fc55d25bd
+SHA256: 40c61ffb182a86b3e86ada1db48e9540fc7b984a41bbcf8fcea1d179aa2b1bee
 Section: hamradio
 Priority: optional
 Homepage: https://www.openwebrx.de/
@@ -515,11 +515,11 @@ Maintainer: Marat Fayzullin <luarvique@gmail.com>
 Installed-Size: 1807
 Depends: adduser, python3 (>= 3.5), python3-pkg-resources, owrx-connector (>= 0.6), soapysdr-tools, python3-csdr (>= 0.18), python3:any, debconf (>= 0.5) | debconf-2.0
 Recommends: python3-digiham (>= 0.6), direwolf (>= 1.4), wsjtx, js8call, runds-connector (>= 0.2), hpsdrconnector, aprs-symbols, m17-demod, python3-js8py (>= 0.1), nmux (>= 0.18), codecserver (>= 0.1)
-Filename: ./arm64/openwebrx_1.2.3_all.deb
+Filename: ./amd64/openwebrx_1.2.3_all.deb
 Size: 615344
-MD5sum: c32657c08118bfca536b1cf6e92bd508
-SHA1: 71be9e0e6984cb9cdd34bf8a97d6e6ff54f7a958
-SHA256: 8b7332b3d09ae0b0c47a2c54bfd99812d4c878590a4ab9791370dcaefebd63c9
+MD5sum: 9a50559a49b35d6ebb008c8492b40f95
+SHA1: 591d9760dd151ad3f732afb0e60c788fc55d25bd
+SHA256: 40c61ffb182a86b3e86ada1db48e9540fc7b984a41bbcf8fcea1d179aa2b1bee
 Section: hamradio
 Priority: optional
 Homepage: https://www.openwebrx.de/
