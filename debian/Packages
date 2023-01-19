@@ -1,5 +1,22 @@
 Package: codecserver-driver-softmbe
 Version: 0.0.1
+Architecture: armhf
+Maintainer: The Knatterfunkers <knatterfunker@protonmail.com>
+Installed-Size: 42
+Depends: libcodecserver (>= 0.1.0), libc6 (>= 2.4), libgcc-s1 (>= 3.5), libmbe1, libstdc++6 (>= 5.2)
+Filename: ./armhf/codecserver-driver-softmbe_0.0.1_armhf.deb
+Size: 13660
+MD5sum: 16a4b9373b278f20121b6669fe88f19e
+SHA1: 8133e76ff9fbcaa1e84d3ccf9bb69a7246e6e055
+SHA256: 4568bbe423c50e36c70e378998990923cd4d761589bbaf9bf42c9bb141712d45
+Section: hamradio
+Priority: optional
+Description: Codecserver driver for libmbe (software decoder)
+ Adds support to acodecserver for software decoding of DMR, YSF, NXDN and
+ D-STAR digital voice.
+
+Package: codecserver-driver-softmbe
+Version: 0.0.1
 Architecture: arm64
 Maintainer: The Knatterfunkers <knatterfunker@protonmail.com>
 Installed-Size: 55
@@ -188,6 +205,29 @@ Description: simple library for software defined radio
 Package: libmbe-dev
 Source: libmbe
 Version: 1.3.0
+Architecture: armhf
+Maintainer: Jared Szechy <jared.szechy@gmail.com>
+Installed-Size: 131
+Depends: libmbe1 (= 1.3.0)
+Filename: ./armhf/libmbe-dev_1.3.0_armhf.deb
+Size: 31264
+MD5sum: 6994383671c963d05714551af35283e8
+SHA1: c8fdba2033bbfafeec191cb60e8c3211dabf8fa7
+SHA256: 1e81e3188f13ed3e5076a72a28cc0a0cf5bde6810ee1e5837a83dbe3ea67c788
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/szechyjs/mbelib
+Description: P25 Phase 1 and ProVoice vocoder - development kit
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ This package contains the development files for libmbe.
+
+Package: libmbe-dev
+Source: libmbe
+Version: 1.3.0
 Architecture: arm64
 Maintainer: Jared Szechy <jared.szechy@gmail.com>
 Installed-Size: 151
@@ -230,6 +270,29 @@ Description: P25 Phase 1 and ProVoice vocoder - development kit
  3600x2250 bit/s vocoder used in various radio systems.
  .
  This package contains the development files for libmbe.
+
+Package: libmbe1
+Source: libmbe
+Version: 1.3.0
+Architecture: armhf
+Maintainer: Jared Szechy <jared.szechy@gmail.com>
+Installed-Size: 115
+Depends: libc6 (>= 2.29)
+Filename: ./armhf/libmbe1_1.3.0_armhf.deb
+Size: 30088
+MD5sum: e071435d6493ad04c796fe2e0af77a34
+SHA1: 58248d74ee585ee586b0998d6e0fb3c025d682f7
+SHA256: b8b74d561f4a54336be8ba28767ad65274d9ff856e1df6f1f06f22446b807f08
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/szechyjs/mbelib
+Description: P25 Phase 1 and ProVoice vocoder - runtime library
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ This package contains the libmbe library used by applications.
 
 Package: libmbe1
 Source: libmbe
